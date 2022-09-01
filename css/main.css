@@ -564,15 +564,17 @@ body {
 
 .header-info-box__tel-link {
   display: inline-block;
-  text-decoration: none;
   padding: 16px 48px;
+  font-family: "Montserrat";
+  font-style: normal;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
   color: #FFFFFF;
-  background-color: var(--main-text-color);
+  background: #FF005C;
   -webkit-box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.2509803922);
           box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.2509803922);
+  text-decoration: none;
 }
 
 .header-part__btn {

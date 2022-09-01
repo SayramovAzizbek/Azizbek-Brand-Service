@@ -102,14 +102,7 @@
 }
 
 .header-info-box__tel-link {
-    @include link-unstyle;
-    padding: 16px 48px;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 18px;
-    color: #FFFFFF;
-    background-color: var(--main-text-color);
-    box-shadow: 0px 0px 30px #0085ff40;
+    @include site-link;
 }
 
 .header-part__btn {
