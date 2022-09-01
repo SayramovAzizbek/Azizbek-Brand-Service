@@ -476,10 +476,12 @@ body {
 
 .header-part__nav-box {
   position: absolute;
-  top: 130px;
-  left: 20px;
+  top: 78px;
+  left: 0;
+  right: 0;
+  z-index: 5;
   display: none;
-  padding-bottom: 25px;
+  padding: 50px 0 25px 20px;
   background-color: #fff;
 }
 
@@ -654,6 +656,95 @@ body {
 }
 /* End of Header Section */
 /* Start Hero Section */
+#hero {
+  background-image: url("../images/hero-img.png");
+  background-repeat: no-repeat;
+  background-size: 556px 450px;
+  background-position: calc(50% + 200px) calc(50% - 0px);
+}
+
+.hero-main-part {
+  padding: 90px 0;
+  background-color: rgba(252, 252, 252, 0.7019607843);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+.hero-part__title-box {
+  max-width: 290px;
+}
+
+.hero-part__title {
+  margin: 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.hero-part__text-box {
+  max-width: 237px;
+  margin: 30px 0;
+}
+
+.hero-part__text {
+  margin: 0;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 164%;
+  color: #000000;
+}
+
+.hero-part__link {
+  display: inline-block;
+  padding: 16px 48px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  background: #FF005C;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.2509803922);
+          box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.2509803922);
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+  #hero {
+    background-size: contain;
+  }
+  .hero-part__title-box {
+    max-width: 520px;
+  }
+  .hero-part__title {
+    text-transform: none;
+  }
+  .hero-part__text-box {
+    max-width: 415px;
+    margin: 40px 0;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .hero-main-part {
+    padding: 175px 0;
+  }
+}
+@media only screen and (min-width: 850px) {
+  #hero {
+    background-position: calc(50% + 300px) calc(50% + 0px);
+  }
+}
+@media only screen and (min-width: 1070px) {
+  .hero-main-part {
+    background-color: transparent;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+  }
+}
 /* End of Hero Section */
 /* Start Footer Section */
 /* End of Footer Section *//*# sourceMappingURL=main.css.map */

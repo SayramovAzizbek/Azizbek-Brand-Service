@@ -41,6 +41,20 @@
   text-decoration: none;
 }
 
+@mixin site-link {
+  display: inline-block;
+  padding: 16px 48px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  background: #FF005C;
+  box-shadow: 0px 0px 30px #0085ff40;
+  text-decoration: none;
+}
+
 @mixin span-unstyle($display: inline-block) {
   display: $display;
 }

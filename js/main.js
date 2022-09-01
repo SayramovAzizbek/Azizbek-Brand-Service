@@ -7,6 +7,7 @@ siteHeaderBtn.addEventListener("click", () => {
 })
 
 window.addEventListener("resize", function () {
-    if (window.innerWidth < 700) resize.classList.remove("header-part__nav-box-on");
+    if (window.innerWidth > 700)
+        siteHeader.classList.remove("header-part__nav-box-on");
 });
 /* End of Header Navbar */

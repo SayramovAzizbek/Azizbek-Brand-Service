@@ -1,3 +1,85 @@
 /* Start Hero Section */
+#hero {
+    background-image: url("../images/hero-img.png");
+    background-repeat: no-repeat;
+    background-size: 556px 450px;
+    background-position: calc(50% + 200px) calc(50% - 0px);
+}
+
+.hero-main-part {
+    padding: 90px 0;
+    background-color: #fcfcfcb3;
+    backdrop-filter: blur(3px);
+}
+
+.hero-part__title-box {
+    max-width: 290px;
+}
+
+.hero-part__title {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.hero-part__text-box {
+    max-width: 237px;
+    margin: 30px 0;
+}
+
+.hero-part__text {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 164%;
+    color: #000000;
+}
+
+.hero-part__link {
+    @include site-link
+}
+
+@media only screen and (min-width:600px) {
+    #hero {
+        background-size: contain;
+    }
+
+    .hero-part__title-box {
+        max-width: 520px;
+    }
+
+    .hero-part__title {
+        text-transform: none;
+    }
+
+    .hero-part__text-box {
+        max-width: 415px;
+        margin: 40px 0;
+    }
+}
+
+@media only screen and (min-width:700px) {
+    .hero-main-part {
+        padding: 175px 0;
+    }
+}
+
+@media only screen and (min-width:850px) {
+    #hero {
+        background-position: calc(50% + 300px) calc(50% + 0px);
+    }
+}
+
+@media only screen and (min-width:1070px) {
+    .hero-main-part {
+        background-color: transparent;
+        backdrop-filter: none;
+    }
+}
 
 /* End of Hero Section */
